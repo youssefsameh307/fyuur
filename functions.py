@@ -3,6 +3,7 @@ from datetime import datetime
 
 
 
+
 # functions using the join queries -------------------------------------------
 def upArtistShows(id):
     show=db.session.query(Venue.id.label('venue_id'),Venue.name.label('venue_name'),Artist.id.label('artist_id'),Artist.name.label('artist_name'),Artist.image_link.label('artist_image_link'),Shows.start_time.label('start_time')
